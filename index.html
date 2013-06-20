@@ -2,9 +2,45 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Hugster</title>
+  <link rel="stylesheet" href="stylesheets/application.css" />
 </head>
 <body>
-
+  <div class="wrapper">
+    <div class="header row">
+      <div class="col1of4">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <div class="col1of2">
+        <ul class="navigation">
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </div>
+      <div class="col1of4">
+        <div class="cart">
+          <div>
+          <script type="text/javascript" src="http://app.ecwid.com/script.js?2275337" charset="utf-8"></script>
+          <!-- remove layout parameter if you want to position minicart yourself -->
+          <script type="text/javascript"> xMinicart("style=","layout=attachToCategories"); </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div>
+      <script type="text/javascript" src="http://app.ecwid.com/script.js?2275337" charset="utf-8"></script>
+      <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(3,3) list(10) table(20)","categoryView=grid","searchView=list","style="); </script>
+      <noscript>Ваш браузер не поддерживает JavaScript. Пожалуйста, перейдите на <a href="http://app.ecwid.com/jsp/2275337/catalog">HTML версию Александр Чаплинский's store</a></noscript>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left"></div>
+      <div class="right">
+        &copy; tanya.in.ua
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,44 @@
+body {
+  font: 13px Helvetica, Arial;
+  color: #000;
+}
+
+a {
+  color: #008ee8;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+  height: 85px;
+  border-bottom: 1px solid #030303;
+}
+
+.cart {
+  float: right;
+  width: 100px;
+  height: 70px;
+  background: url('../images/cart.png');
+}
+
+.body {
+  min-height: 400px;
+}
+
+.navigation {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.navigation li {
+  margin-left: 40px;
+  float: left;
+  font-size: 20px;
+}
+
+.navigation li a {
+  text-decoration: none;
+}
