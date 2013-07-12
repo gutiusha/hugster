@@ -17,21 +17,28 @@ p {
 }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
   width: 960px;
 }
 
 .header {
+  padding-top: 20px;
   height: 85px;
   border-bottom: 1px solid #030303;
   margin-bottom: 40px
 }
 
+.footer {
+  padding: 20px 0;
+}
+
 .cart {
   float: right;
-  width: 100px;
-  height: 70px;
-  background: url('../images/cart.png');
+  width: 180px;
+  height: 120px;
+  margin-right: 10px;
+  background: #fff url('../images/cart.png') no-repeat center 0;
 }
 
 .body {
