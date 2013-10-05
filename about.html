@@ -5,6 +5,18 @@
   <title>Hugster</title>
   <link rel="shortcut icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="stylesheets/application.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.instagram.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.slimbox2.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+  	$(".instagram").instagram({
+      hash: 'hugstershop',
+      show: '1000',
+      clientId: '693062f113064d2f97b242fbf76de6d7'
+      });
+  	});
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -38,6 +50,7 @@
           <p>По всем вопросам пишите на: <a href="mailto:gutiusha@gmail.com">gutiusha@gmail.com</a></p>
         </div>
       </div>
+      <div class="instagram"></div>
     </div>
     <div class="footer row">
        <div class="left mrm">
