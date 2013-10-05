@@ -17,7 +17,7 @@
     options && $.extend(settings, options);
 
     function createPhotoElement(photo) {
-      if((photo.caption) !== null){
+      if(photo.caption !== null){
         var photo_content = photo.caption.text + "  -  ";
       }
       else {
@@ -31,7 +31,7 @@
         // .attr('target', '_blank')
     .attr('href', photo.images.standard_resolution.url)
     .attr('rel', 'lightbox-instagram')
-    .attr('title', photo.caption.text + "&nbsp;&nbsp;/&nbsp;&nbsp;" + "<span>&hearts;</span>&nbsp;" + photo.likes.count + "&nbsp;likes")
+    .attr('title', photo.caption.text)
          .append(
            $('<img>')
              .addClass('instagram-image')
@@ -80,7 +80,7 @@
         settings.onComplete != null && typeof settings.onComplete == 'function' && settings.onComplete(res.data);
         var limit = settings.show == null ? res.data.length : settings.show;
         for(var i = 0; i < limit; i++) {
-          if (res.data[i] != null) {
+          if ((res.data[i] != null) && (res.data[i].type == "image")) {
             that.append(createPhotoElement(res.data[i]));
           }
         }
